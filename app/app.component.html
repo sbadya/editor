@@ -1,0 +1,6 @@
+<div class="container">
+    <ui-component (onDelete)="delete($event)" (onChangeModel)="update($event)" 
+    *ngFor="let item of structures" [structure]="item"></ui-component>
+    <a href="#" (click)="add($event)">Add New Block</a>
+</div>
+<editor (onUpdateUI)="updateUI($event)"></editor>

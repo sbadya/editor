@@ -1,0 +1,47 @@
+:host {
+    border: 1px solid #c9c9c9;
+    display: block;
+    font-size: 13px;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+    padding: 10px 20px;
+    width: 268px;
+}
+a {
+    float: right;
+    font-weight: bold;
+}
+h2 {
+    font-size: 15px;
+    float: left;
+}
+textarea {
+    padding: 3px;
+    resize: none;
+    width: 100%;
+}
+.component__title {
+    clear: both;
+    margin: 0 0 10px 0;
+    padding: 10px 0 0 0;
+}
+.component__label {
+    display: block;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+.component__title-value {
+    padding: 3px;
+    width: 100%;
+}
+.component__option {
+    margin: 0 0 5px 0;
+}
+.component__option-title {
+    line-height: 13px;
+    margin: 0 0 0 5px;
+    vertical-align: top;
+}
+.component__option-value {
+    height: 13px;
+}

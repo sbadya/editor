@@ -1,0 +1,39 @@
+<h2>{{structure.type}}</h2>
+<a href="#" (click)="delete($event)">Delete</a>
+
+<div class="component__title">
+    <label class="component__label">{{structure.title.key}}</label>
+    <input class="component__title-value" type="text" 
+    (ngModelChange)='structure.title.value = $event; changeModel();'
+    [ngModel]='structure.title.value' />
+</div>
+
+<div>
+    <label class="component__label">{{structure.description.key}}</label>
+    <textarea  
+        [ngModel]='structure.description.value' 
+        (ngModelChange)='structure.description.value = $event; changeModel();'
+        *ngIf='structure.type === "blockType1"' cols="30" rows="7">
+    </textarea>
+
+    <div *ngIf='structure.type === "blockType2"'>
+        <div class="component__option" *ngFor="let option of structure.description.options">
+            <input class = "component__option-value" type="checkbox"
+             [name]="structure.description.key"
+             [checked]='option.value === "true"'
+             (change)='option.value = option.value === "true" ? "false" : "true"; changeModel();'/>
+            <label class="component__option-title">{{option.title}}</label>
+        </div>
+    </div>
+    
+    <div *ngIf='structure.type === "blockType3"'>
+        <div class="component__option" *ngFor="let option of structure.description.options">
+            <input class = "component__option-value" type="radio" 
+            [name]="structure.description.key" 
+            [value]='option.value'
+            (ngModelChange)='structure.description.value = $event; changeModel();'
+            [ngModel]='structure.description.value' />
+            <label class="component__option-title">{{option.title}}</label>
+        </div>
+    </div>
+</div>

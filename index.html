@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UITOOL</title>
+    <base href="/" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="node_modules/codemirror/lib/codemirror.css" />
+    <link rel="stylesheet" href="node_modules/codemirror/theme/dracula.css" />
+    
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="systemjs.config.js"></script>
+
+    <script>
+        System
+            .import('app')
+            .then(() => System.import('node_modules/codemirror/addon/search/searchcursor.js'))
+            .catch(console.error.bind(console));
+    </script>
+</head>
+<body>
+    <h1 class="header">UI TOOL</h1>
+    <uiTool-app>Loading...</uiTool-app>  
+</body>
+</html>
