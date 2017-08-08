@@ -1,0 +1,68 @@
+{
+	"type": "blockType1",
+	"title": {
+		"key": "",
+		"value": ""
+	},
+	"description": {
+		"key": "",
+		"value": ""
+	}
+}
+{
+	"type": "blockType2",
+	"title": {
+		"key": "",
+		"value": ""
+	},
+	"description": {
+		"key": "",
+		"options": [
+			{
+				"title": "Checkbox 1",
+				"value": "false"
+			},
+			{
+				"title": "Checkbox 2",
+				"value": "true"
+			},
+			{
+				"title": "Checkbox 3",
+				"value": "false"
+			},
+			{
+				"title": "Checkbox 4",
+				"value": "true"
+			}
+		]
+	}
+}
+{
+	"type": "blockType3",
+	"title": {
+		"key": "",
+		"value": ""
+	},
+	"description": {
+		"key": "",
+		"value": "rb1",
+		"options": [
+			{
+				"title": "Radiobutton 1",
+				"value": "rb1"
+			},
+			{
+				"title": "Radiobutton 2",
+				"value": "rb2"
+			},
+			{
+				"title": "Radiobutton 3",
+				"value": "rb3"
+			},
+			{
+				"title": "Radiobutton 4",
+				"value": "rb4"
+			}
+		]
+	}
+}
