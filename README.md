@@ -1,4 +1,4 @@
-# UiTool
+# Editor
 Steps to reproduce:
 1. git clone https://github.com/sbadya/UiTool.git
 2. cd UiTool
